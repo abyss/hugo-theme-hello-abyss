@@ -1,30 +1,35 @@
-# Hello Friend NG
+# Hello Abyss
 
 ![Hello Friend NG](https://dsh.re/d914c)
-
+> *(Image is of hello-friend-ng and may not be 100% accurate. See https://abyss.dev for most accurate appearance.)*
 ## General informations
 
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for their great work.
+This theme is a modified version of [hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) by Djordje Atlialp. Check it out, maybe it will work better for your purposes. If you really like this theme, buy him a coffee.
+
+You can see an example of this theme in use at https://abyss.dev.
 
 ---
 
 ## Table of Contents
 
-- [Features](#features)
-- [How to start](#how-to-start)
-- [How to configure](#how-to-configure)
-- [More](#more-things)
-  - [Built in shortcodes](#built-in-shortcodes)
-    - [image](#image)
-  - [Code highlighting](#code-highlighting)
-  - [Favicon](#favicon)
-  - [Audio Support](#audio-support)
-- [Social Icons](#social-icons)
-- [Known issues](#known-issues)
-- [How to edit the theme](#how-to-edit-the-theme)
-- [Changelog](CHANGELOG.md)
-- [Sponsoring](#sponsoring)
-- [Licence](#licence)
+- [Hello Abyss](#hello-abyss)
+  - [General informations](#general-informations)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+    - [What hello-abyss changes over hello-friend-ng](#what-hello-abyss-changes-over-hello-friend-ng)
+  - [How to start](#how-to-start)
+  - [How to configure](#how-to-configure)
+  - [More things](#more-things)
+    - [Built-in shortcodes](#built-in-shortcodes)
+      - [image](#image)
+    - [Code highlighting](#code-highlighting)
+    - [Favicon](#favicon)
+    - [Audio Support](#audio-support)
+  - [Social Icons:](#social-icons)
+  - [Known issues](#known-issues)
+  - [How to edit the theme](#how-to-edit-the-theme)
+  - [Sponsoring](#sponsoring)
+  - [Licence](#licence)
 
 ---
 
@@ -43,20 +48,29 @@ This theme was highly inspired by the [hello-friend](https://github.com/panr/hug
 - Support for [Plausible](https://plausible.io) (thanks to [@Joffcom](https://github.com/Joffcom))
 - Support for [utterances](https://utteranc.es/) comment system
 
+### What hello-abyss changes over hello-friend-ng
+
+- Return of the ability to set a default theme for the website that overrides the OS preferences
+- Posts use Date instead of Datetime
+- CanonicalURL can be overriden to a different domain
+- Logo text can be dynamic and change per page
+- Minor cosmetic changes in the 404 page
+- Possibly other undocumented changes (sorry!), see the commit log
+
 ## How to start
 
-You can download the theme manually by going to [https://github.com/rhazdon/hugo-theme-hello-friend-ng.git](https://github.com/rhazdon/hugo-theme-hello-friend-ng.git) and pasting it to `themes/hello-friend-ng` in your root directory.
+You can download the theme manually by going to [https://github.com/abyss/hugo-theme-hello-abyss](https://github.com/abyss/hugo-theme-hello-abyss) and pasting it to `themes/hello-abyss` in your root directory.
 
 You can also clone it directly to your Hugo folder:
 
 ``` bash
-git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+git clone https://github.com/abyss/hugo-theme-hello-abyss.git themes/hello-abyss
 ```
 
 If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
 
 ``` bash
-git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
+git submodule add https://github.com/abyss/hugo-theme-hello-abyss.git themes/hello-abyss
 ```
 
 ## How to configure
@@ -69,7 +83,7 @@ Note: There are more options to configure. Take a look into the `config.toml` in
 baseurl      = "localhost"
 title        = "My Blog"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
+theme        = "hello-abyss"
 paginate     = 10
 
 [params]
@@ -86,7 +100,7 @@ paginate     = 10
 
   # Enable sharing buttons, if you like
   enableSharingButtons = true
-  
+
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
 
@@ -102,7 +116,8 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
+    title = "Hello Abyss"
+    subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
@@ -180,7 +195,7 @@ A large variety of social icons are available and can be configured like this:
   url = "<profile_URL>"
 ```
 
-Take a look into this [list](docs/svgs.md) of available icon options. 
+Take a look into this [list](docs/svgs.md) of available icon options.
 
 If you need another one, just open an issue or create a pull request with your wished icon. :)
 
@@ -208,6 +223,13 @@ If you like my work and if you think this project is worth to support it, just <
 
 ## Licence
 
-Copyright © 2019-2021 Djordje Atlialp
+The theme is released under the MIT License. Check the [license](LICENSE.md) for additional information.
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
+Copyright © 2021 Craig Reeder
+
+Portions of this software are copyright of their respective authors and released under the MIT license:
+
+Copyright © 2018 Track3<br />
+Copyright © 2019 panr<br />
+Copyright © 2019-2021 Djordje Atlialp<br />
+
